@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Get in touch with Yazan Antabli about opportunities.">
+    <meta name="keywords" content="Yazan Antabli, contact, email, Belfast">
+    <meta name="author" content="Yazan Antabli">
+    <meta property="og:title" content="Contact | Yazan Antabli Portfolio">
+    <meta property="og:description" content="Contact Yazan Antabli for opportunities and inquiries.">
+    <meta property="og:type" content="website">
+    <title>Yazan Antabli | Contact - Aspiring Junior Developer Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1 class="loading-title">Yazan Antabli</h1>
+            <p class="loading-subtitle">Building my future in tech</p>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-text">Yazan Antabli</a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+                    <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+                    <li><a href="learning.html" class="nav-link" data-page="learning">Learning</a></li>
+                    <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="theme-toggle-wrapper">
+                        <input class="theme-toggle-input" id="themeToggle" type="checkbox" aria-label="Toggle dark theme">
+                        <label class="theme-toggle" for="themeToggle" title="Toggle light and dark theme">
+                            <span class="toggle__handler" aria-hidden="true">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1" aria-hidden="true"></span>
+                            <span class="star star--2" aria-hidden="true"></span>
+                            <span class="star star--3" aria-hidden="true"></span>
+                            <span class="star star--4" aria-hidden="true"></span>
+                            <span class="star star--5" aria-hidden="true"></span>
+                            <span class="star star--6" aria-hidden="true"></span>
+                        </label>
+                    </div>
+
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Contact Me</h1>
+                    <p class="section-subtitle">I am open to junior, trainee, IT support, and technology programme opportunities</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h2>Get in Touch</h2>
+                            
+                            <div class="contact-item">
+                                <strong>Email</strong>
+                                <p>yazanantabli4@gmail.com</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Location</strong>
+                                <p>Belfast, United Kingdom</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Interested in</strong>
+                                <p>Junior web developer roles, trainee developer roles, junior software developer roles, IT support roles, and technology programmes.</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Availability</strong>
+                                <p>Open to part-time, work experience, internships, apprenticeships, and Belfast or hybrid opportunities.</p>
+                            </div>
+
+                            <div class="contact-buttons">
+                                <a href="mailto:yazanantabli4@gmail.com" class="btn btn-primary">Email Me</a>
+                                <a href="#" class="btn btn-outline">LinkedIn</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="availability-preview">
+                    <h2>Quick Links</h2>
+                    <div class="quick-links">
+                        <a href="projects.html" class="btn btn-secondary">View My Projects</a>
+                        <a href="cv.html" class="btn btn-secondary" target="_blank" rel="noopener">View My CV</a>
+                        <a href="cv.pdf" class="btn btn-secondary" download>Download My CV</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yazan Antabli. Built with HTML, CSS, and JavaScript.</p>
+            <div class="footer-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:yazanantabli4@gmail.com" aria-label="Email">Email</a>
+                <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to top</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

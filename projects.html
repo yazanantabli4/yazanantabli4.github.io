@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Yazan Antabli's portfolio of web development projects.">
+    <meta name="keywords" content="Yazan Antabli, projects, portfolio, web development, HTML, CSS, JavaScript">
+    <meta name="author" content="Yazan Antabli">
+    <meta property="og:title" content="Projects | Yazan Antabli Portfolio">
+    <meta property="og:description" content="View Yazan Antabli's web development projects.">
+    <meta property="og:type" content="website">
+    <title>Yazan Antabli | Projects - Aspiring Junior Developer Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1 class="loading-title">Yazan Antabli</h1>
+            <p class="loading-subtitle">Building my future in tech</p>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-text">Yazan Antabli</a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+                    <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+                    <li><a href="learning.html" class="nav-link" data-page="learning">Learning</a></li>
+                    <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="theme-toggle-wrapper">
+                        <input class="theme-toggle-input" id="themeToggle" type="checkbox" aria-label="Toggle dark theme">
+                        <label class="theme-toggle" for="themeToggle" title="Toggle light and dark theme">
+                            <span class="toggle__handler" aria-hidden="true">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1" aria-hidden="true"></span>
+                            <span class="star star--2" aria-hidden="true"></span>
+                            <span class="star star--3" aria-hidden="true"></span>
+                            <span class="star star--4" aria-hidden="true"></span>
+                            <span class="star star--5" aria-hidden="true"></span>
+                            <span class="star star--6" aria-hidden="true"></span>
+                        </label>
+                    </div>
+
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Featured Project Section -->
+        <section class="featured-project">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Featured Project</h1>
+                </div>
+
+                <div class="featured-grid">
+                    <div class="featured-preview">
+                        <div class="project-preview-card">
+                            <div class="preview-header">TM</div>
+                            <div class="preview-icon">🍽️</div>
+                        </div>
+                    </div>
+
+                    <div class="featured-content">
+                        <h2 class="featured-title">Taste of MiddleEast Ordering Website</h2>
+                        
+                        <div class="featured-section">
+                            <h3>Project Goal</h3>
+                            <p>To create a simple and realistic ordering website concept for a restaurant where customers can choose items, review their basket, and send the full order through WhatsApp.</p>
+                        </div>
+
+                        <div class="featured-section">
+                            <h3>Main Problem Solved</h3>
+                            <p>Many small restaurants may not need a full online payment system at the start. This project explores a simple front-end ordering flow that helps customers prepare their order and send it directly to the restaurant via WhatsApp, avoiding complex payment integrations.</p>
+                        </div>
+
+                        <div class="featured-section">
+                            <h3>Key Features</h3>
+                            <ul class="feature-list">
+                                <li>Menu item cards</li>
+                                <li>Add to basket feature</li>
+                                <li>Quantity updates</li>
+                                <li>Customer details form</li>
+                                <li>WhatsApp message generation</li>
+                                <li>Call to Order button</li>
+                                <li>No fake online payment</li>
+                                <li>Clear customer journey</li>
+                            </ul>
+                        </div>
+
+                        <div class="featured-section">
+                            <h3>Tools Used</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+
+                        <div class="featured-section">
+                            <h3>What I Learned</h3>
+                            <p>I learned how to think about real customer needs, plan a practical ordering flow, and use JavaScript to make a website more interactive and useful for users.</p>
+                        </div>
+
+                        <div class="featured-buttons">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <a href="#" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Projects Section -->
+        <section class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">All Projects</h2>
+                    <p class="section-subtitle">A selection of projects that show my learning, planning, and practical development skills</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="college">College Projects</button>
+                    <button class="filter-btn" data-filter="personal">Personal Projects</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="design">Web Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="college design">
+                        <div class="project-image zoo">Z</div>
+                        <div class="project-content">
+                            <span class="project-type">College Web Project</span>
+                            <h3 class="project-title">Zoofie Zoo Website</h3>
+                            <p class="project-description">A responsive educational website for Zoofie Zoo, created as part of my software development coursework. The site provides visitors with information about animals, opening times, ticket pricing, photo galleries, and contact details, with integrated Google Maps for location finding.</p>
+                            <div class="project-features">
+                                <span class="feature">Responsive layout</span>
+                                <span class="feature">Animal information pages</span>
+                                <span class="feature">Opening hours and tickets</span>
+                                <span class="feature">Photo gallery</span>
+                                <span class="feature">Contact form</span>
+                                <span class="feature">Google Maps integration</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I gained experience in planning a complete website for a real organization, implementing responsive design, and understanding user needs for an educational venue.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="personal javascript">
+                        <div class="project-image restaurant">TM</div>
+                        <div class="project-content">
+                            <span class="project-type">Personal / Practice Project</span>
+                            <h3 class="project-title">Taste of MiddleEast Ordering Website</h3>
+                            <p class="project-description">A restaurant ordering website concept for Taste of MiddleEast, allowing customers to browse the menu, add items to a basket, adjust quantities, and send their complete order via WhatsApp. This avoids the need for complex online payment systems, focusing instead on a simple, effective ordering process.</p>
+                            <div class="project-features">
+                                <span class="feature">Menu display</span>
+                                <span class="feature">Basket functionality</span>
+                                <span class="feature">Quantity adjustments</span>
+                                <span class="feature">Customer details form</span>
+                                <span class="feature">WhatsApp order sending</span>
+                                <span class="feature">No payment integration</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I learned to design a practical customer ordering flow, implement interactive features with JavaScript, and create a user-friendly e-commerce concept without complex backend requirements.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="personal design">
+                        <div class="project-image studio">YZN</div>
+                        <div class="project-content">
+                            <span class="project-type">Personal Brand Website</span>
+                            <h3 class="project-title">YZN Studio Website</h3>
+                            <p class="project-description">A modern web design agency website concept for YZN Studio, featuring service offerings, pricing packages, consultation booking, portfolio showcases, and call-to-action sections. The design emphasizes a professional, dark-themed aesthetic suitable for a creative agency.</p>
+                            <div class="project-features">
+                                <span class="feature">Modern landing page</span>
+                                <span class="feature">Service descriptions</span>
+                                <span class="feature">Pricing packages</span>
+                                <span class="feature">Consultation booking</span>
+                                <span class="feature">Portfolio showcase</span>
+                                <span class="feature">Dark theme design</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I practiced creating a professional business website layout, implementing modern design trends, and structuring content to promote services effectively.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="personal design">
+                        <div class="project-image portfolio">YA</div>
+                        <div class="project-content">
+                            <span class="project-type">Portfolio Project</span>
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">My personal portfolio website, designed to showcase my skills, projects, learning journey, and professional goals. It serves as both a demonstration of my web development abilities and a platform for job applications.</p>
+                            <div class="project-features">
+                                <span class="feature">About and skills sections</span>
+                                <span class="feature">Project showcase</span>
+                                <span class="feature">Learning journey</span>
+                                <span class="feature">Contact information</span>
+                                <span class="feature">Responsive design</span>
+                                <span class="feature">GitHub Pages ready</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I learned to present my work professionally, create an effective online presence, and build a website that supports career development and job applications.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="personal javascript">
+                        <div class="project-image components">JS</div>
+                        <div class="project-content">
+                            <span class="project-type">Learning Project</span>
+                            <h3 class="project-title">JavaScript Practice Components</h3>
+                            <p class="project-description">A collection of interactive JavaScript components and features created to build confidence with front-end interactivity. Includes mobile menus, form validation, project filtering, scroll animations, and various user interface enhancements.</p>
+                            <div class="project-features">
+                                <span class="feature">Mobile navigation menu</span>
+                                <span class="feature">Form validation</span>
+                                <span class="feature">Project filtering system</span>
+                                <span class="feature">Scroll animations</span>
+                                <span class="feature">Interactive buttons</span>
+                                <span class="feature">DOM manipulation</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I practiced implementing common web interactions, improving my JavaScript skills, and creating reusable components for better user experiences.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="projects-note">Project links are placeholders for now and will be updated as I upload my work to GitHub.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yazan Antabli. Built with HTML, CSS, and JavaScript.</p>
+            <div class="footer-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:yazanantabli4@gmail.com" aria-label="Email">Email</a>
+                <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to top</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

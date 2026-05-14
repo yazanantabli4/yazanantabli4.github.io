@@ -1,0 +1,1043 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Yazan Antabli, an aspiring junior developer based in Belfast, learning web development, software development, and AI.">
+    <meta name="keywords" content="Yazan Antabli, software development student, junior web developer, Belfast, portfolio, HTML, CSS, JavaScript, Python, GitHub, IT support">
+    <meta name="author" content="Yazan Antabli">
+    <meta property="og:title" content="Yazan Antabli | Aspiring Junior Developer Portfolio">
+    <meta property="og:description" content="Personal portfolio of Yazan Antabli, an aspiring junior developer based in Belfast, learning web development, software development, and AI.">
+    <meta property="og:type" content="website">
+    <title>Yazan Antabli | Home - Aspiring Junior Developer Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1 class="loading-title">Yazan Antabli</h1>
+            <p class="loading-subtitle">Building my future in tech</p>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-text">Yazan Antabli</a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+                    <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+                    <li><a href="learning.html" class="nav-link" data-page="learning">Learning</a></li>
+                    <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="theme-toggle-wrapper">
+                        <input class="theme-toggle-input" id="themeToggle" type="checkbox" aria-label="Toggle dark theme">
+                        <label class="theme-toggle" for="themeToggle" title="Toggle light and dark theme">
+                            <span class="toggle__handler" aria-hidden="true">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1" aria-hidden="true"></span>
+                            <span class="star star--2" aria-hidden="true"></span>
+                            <span class="star star--3" aria-hidden="true"></span>
+                            <span class="star star--4" aria-hidden="true"></span>
+                            <span class="star star--5" aria-hidden="true"></span>
+                            <span class="star star--6" aria-hidden="true"></span>
+                        </label>
+                    </div>
+
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Belfast-based aspiring junior developer</span>
+                    <h1 class="hero-title">Hi, I'm Yazan Antabli</h1>
+                    
+                    <div class="typing-container">
+                        <p class="typing-text">Aspiring Junior Developer</p>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        I am an aspiring junior developer based in Belfast, currently building my skills in HTML, CSS, JavaScript, Python, responsive web design, GitHub, UI/UX basics, and AI basics. I enjoy creating practical projects, learning through real examples, and improving step by step towards a junior role in tech.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View My Projects</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                        <div class="btn-group cv-actions-inline">
+                            <a href="cv.html" class="btn btn-outline" target="_blank" rel="noopener">View CV</a>
+                            <a href="cv.pdf" class="btn btn-outline" download>Download CV</a>
+                        </div>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="5">5</div>
+                            <div class="stat-label">Web Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="3">3</div>
+                            <div class="stat-label">Years Work Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Belfast Based</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Open to Junior Roles</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <pre><code>const student = {
+  name: "Yazan Antabli",
+  location: "Belfast",
+  learning: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python"
+  ],
+  goal: "Junior Developer"
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">A quick introduction to who I am and where I am heading</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I am an aspiring junior developer based in Belfast. I am interested in coding, websites, software development, and AI, and I am currently building skills in HTML, CSS, JavaScript, Python, responsive web design, GitHub, and UI/UX basics.
+                        </p>
+                        <p>
+                            I am still developing my skills, so my portfolio focuses on honest learning progress, practical projects, and continuous improvement. My aim is to build real projects, improve my code quality, and prepare for junior developer, trainee developer, or IT support roles.
+                        </p>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>What I Bring</h3>
+                        <p>
+                            My background also includes around 3 years of restaurant work experience, where I developed communication, teamwork, customer service, reliability, organisation, and the ability to stay calm under pressure. I believe these transferable skills are useful in tech because software development also requires problem solving, communication, patience, and working with others.
+                        </p>
+                        <div class="mini-cards">
+                            <span class="mini-card">Practical learner</span>
+                            <span class="mini-card">Strong customer service background</span>
+                            <span class="mini-card">Interested in web and AI</span>
+                            <span class="mini-card">Open to feedback</span>
+                            <span class="mini-card">Building real projects</span>
+                            <span class="mini-card">Ready for junior opportunities</span>
+                        </div>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="looking-for-box">
+                    <h3>I am currently interested in:</h3>
+                    <ul class="interest-list">
+                        <li>Junior Web Developer roles</li>
+                        <li>Trainee Developer roles</li>
+                        <li>Junior Software Developer roles</li>
+                        <li>IT Support roles</li>
+                        <li>Technology programmes</li>
+                        <li>Belfast or hybrid opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills I'm Building</h2>
+                    <p class="section-subtitle">A clear view of the technical and transferable skills I am developing</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Front-End Development -->
+                    <div class="skill-category">
+                        <h3>Front-End Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-level">Comfortable with basics</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                                <p class="skill-description">Building structured web pages using semantic HTML.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-level">Practising</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <p class="skill-description">Styling responsive layouts, cards, sections, and modern interfaces.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Learning and improving</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                                <p class="skill-description">Adding interactivity such as menus, forms, filters, and dynamic features.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-level">Practising</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <p class="skill-description">Creating layouts that work on mobile, tablet, and desktop.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Accessibility Basics</span>
+                                    <span class="skill-level">Learning</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                                <p class="skill-description">Using clear labels, readable contrast, and keyboard-friendly elements.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming & Tools -->
+                    <div class="skill-category">
+                        <h3>Programming & Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">Learning</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 45%"></div>
+                                </div>
+                                <p class="skill-description">Practising programming logic and problem solving.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">GitHub</span>
+                                    <span class="skill-level">Building confidence</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                                <p class="skill-description">Uploading projects, organising code, and learning version control.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">VS Code</span>
+                                    <span class="skill-level">Comfortable with basics</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                                <p class="skill-description">Writing and managing project files.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Debugging Basics</span>
+                                    <span class="skill-level">Practising</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                                <p class="skill-description">Finding and fixing simple errors in code.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-level">Improving</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <p class="skill-description">Breaking problems into smaller steps and testing solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design & UX -->
+                    <div class="skill-category">
+                        <h3>Design & User Experience</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">UI/UX Basics</span>
+                                    <span class="skill-level">Learning</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                                <p class="skill-description">Thinking about layout, user needs, and clear navigation.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Wireframes</span>
+                                    <span class="skill-level">Practising</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                                <p class="skill-description">Planning page layouts before building.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Mobile-first Design</span>
+                                    <span class="skill-level">Learning</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                                <p class="skill-description">Designing for smaller screens first.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Clean Layouts</span>
+                                    <span class="skill-level">Practising</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <p class="skill-description">Keeping pages tidy, readable, and easy to use.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">User-friendly Navigation</span>
+                                    <span class="skill-level">Practising</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <p class="skill-description">Making websites simple to move around.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transferable Skills -->
+                    <div class="skill-category">
+                        <h3>Transferable Skills</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Customer Service</span>
+                                    <span class="skill-level">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <p class="skill-description">Built through around 3 years of restaurant work.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-level">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <p class="skill-description">Explaining information clearly and listening to people.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Teamwork</span>
+                                    <span class="skill-level">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <p class="skill-description">Working with others in busy environments.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Reliability</span>
+                                    <span class="skill-level">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <p class="skill-description">Turning up, staying organised, and taking responsibility.</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Working Under Pressure</span>
+                                    <span class="skill-level">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <p class="skill-description">Staying calm during busy or stressful situations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-cta">
+                    <a href="skills.html" class="btn btn-primary">View All Skills</a>
+                </div>
+            </div>
+        </section>
+        <section class="featured-project" id="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Project</h2>
+                </div>
+
+                <div class="featured-grid">
+                    <div class="featured-preview">
+                        <div class="project-preview-card">
+                            <div class="preview-header">TM</div>
+                            <div class="preview-icon">🍽️</div>
+                        </div>
+                    </div>
+
+                    <div class="featured-content">
+                        <h3 class="featured-title">Taste of MiddleEast Ordering Website</h3>
+                        
+                        <div class="featured-section">
+                            <h4>Project Goal</h4>
+                            <p>To create a simple and realistic ordering website concept for a restaurant where customers can choose items, review their basket, and send the full order through WhatsApp.</p>
+                        </div>
+
+                        <div class="featured-section">
+                            <h4>Main Problem Solved</h4>
+                            <p>Many small restaurants may not need a full online payment system at the start. This project explores a simple front-end ordering flow that helps customers prepare their order and send it directly to the restaurant through WhatsApp.</p>
+                        </div>
+
+                        <div class="featured-section">
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>Menu item cards</li>
+                                <li>Add to basket feature</li>
+                                <li>Quantity updates</li>
+                                <li>Customer details form</li>
+                                <li>WhatsApp message generation</li>
+                                <li>Call to Order button</li>
+                                <li>No fake online payment</li>
+                                <li>Clear customer journey</li>
+                            </ul>
+                        </div>
+
+                        <div class="featured-section">
+                            <h4>Tools Used</h4>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+
+                        <div class="featured-section">
+                            <h4>What I Learned</h4>
+                            <p>I learned how to think about real customer needs, plan a practical ordering flow, and use JavaScript to make a website more interactive and useful.</p>
+                        </div>
+
+                        <div class="featured-buttons">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <a href="#" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">A selection of projects that show my learning, planning, and practical development skills</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="college">College Projects</button>
+                    <button class="filter-btn" data-filter="personal">Personal Projects</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="design">Web Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="college design">
+                        <div class="project-image zoo">Z</div>
+                        <div class="project-content">
+                            <span class="project-type">College Web Project</span>
+                            <h3 class="project-title">Zoofie Zoo Website</h3>
+                            <p class="project-description">A responsive educational website for Zoofie Zoo, created as part of my software development coursework. The site provides visitors with information about animals, opening times, ticket pricing, photo galleries, and contact details, with integrated Google Maps for location finding.</p>
+                            <div class="project-features">
+                                <span class="feature">Responsive layout</span>
+                                <span class="feature">Animal information pages</span>
+                                <span class="feature">Opening hours and tickets</span>
+                                <span class="feature">Photo gallery</span>
+                                <span class="feature">Contact form</span>
+                                <span class="feature">Google Maps integration</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I gained experience in planning a complete website for a real organization, implementing responsive design, and understanding user needs for an educational venue.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="personal javascript">
+                        <div class="project-image restaurant">TM</div>
+                        <div class="project-content">
+                            <span class="project-type">Personal / Practice Project</span>
+                            <h3 class="project-title">Taste of MiddleEast Ordering Website</h3>
+                            <p class="project-description">A restaurant ordering website concept for Taste of MiddleEast, allowing customers to browse the menu, add items to a basket, adjust quantities, and send their complete order via WhatsApp. This avoids the need for complex online payment systems, focusing instead on a simple, effective ordering process.</p>
+                            <div class="project-features">
+                                <span class="feature">Menu display</span>
+                                <span class="feature">Basket functionality</span>
+                                <span class="feature">Quantity adjustments</span>
+                                <span class="feature">Customer details form</span>
+                                <span class="feature">WhatsApp order sending</span>
+                                <span class="feature">No payment integration</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I learned to design a practical customer ordering flow, implement interactive features with JavaScript, and create a user-friendly e-commerce concept without complex backend requirements.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="personal design">
+                        <div class="project-image studio">YZN</div>
+                        <div class="project-content">
+                            <span class="project-type">Personal Brand Website</span>
+                            <h3 class="project-title">YZN Studio Website</h3>
+                            <p class="project-description">A modern web design agency website concept for YZN Studio, featuring service offerings, pricing packages, consultation booking, portfolio showcases, and call-to-action sections. The design emphasizes a professional, dark-themed aesthetic suitable for a creative agency.</p>
+                            <div class="project-features">
+                                <span class="feature">Modern landing page</span>
+                                <span class="feature">Service descriptions</span>
+                                <span class="feature">Pricing packages</span>
+                                <span class="feature">Consultation booking</span>
+                                <span class="feature">Portfolio showcase</span>
+                                <span class="feature">Dark theme design</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I practiced creating a professional business website layout, implementing modern design trends, and structuring content to promote services effectively.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="personal design">
+                        <div class="project-image portfolio">YA</div>
+                        <div class="project-content">
+                            <span class="project-type">Portfolio Project</span>
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">My personal portfolio website, designed to showcase my skills, projects, learning journey, and professional goals. It serves as both a demonstration of my web development abilities and a platform for job applications.</p>
+                            <div class="project-features">
+                                <span class="feature">About and skills sections</span>
+                                <span class="feature">Project showcase</span>
+                                <span class="feature">Learning journey</span>
+                                <span class="feature">Contact information</span>
+                                <span class="feature">Responsive design</span>
+                                <span class="feature">GitHub Pages ready</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I learned to present my work professionally, create an effective online presence, and build a website that supports career development and job applications.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="personal javascript">
+                        <div class="project-image components">JS</div>
+                        <div class="project-content">
+                            <span class="project-type">Learning Project</span>
+                            <h3 class="project-title">JavaScript Practice Components</h3>
+                            <p class="project-description">A collection of interactive JavaScript components and features created to build confidence with front-end interactivity. Includes mobile menus, form validation, project filtering, scroll animations, and various user interface enhancements.</p>
+                            <div class="project-features">
+                                <span class="feature">Mobile navigation menu</span>
+                                <span class="feature">Form validation</span>
+                                <span class="feature">Project filtering system</span>
+                                <span class="feature">Scroll animations</span>
+                                <span class="feature">Interactive buttons</span>
+                                <span class="feature">DOM manipulation</span>
+                            </div>
+                            <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                            <p class="project-learning"><strong>What I learned:</strong> I practiced implementing common web interactions, improving my JavaScript skills, and creating reusable components for better user experiences.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="projects-note">Project links are placeholders for now and will be updated as I upload my work to GitHub.</p>
+            </div>
+        </section>
+
+        <!-- What I Can Help With Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What I Can Help With</h2>
+                    <p class="section-subtitle">Beginner-friendly services while I continue learning</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Simple Business Websites</h3>
+                        <p>Creating clean, responsive website pages for small businesses, personal brands, or practice projects.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Website Updates</h3>
+                        <p>Helping improve layout, content, mobile responsiveness, navigation, and basic user experience.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3>Front-End Features</h3>
+                        <p>Adding simple interactive features such as menus, forms, filters, buttons, hover effects, and basic JavaScript functionality.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💡</div>
+                        <h3>Tech Support and Learning</h3>
+                        <p>Helping with basic IT support, problem solving, learning new tools, and improving digital confidence step by step.</p>
+                    </div>
+                </div>
+
+                <p class="services-note">I am open to beginner-friendly projects, work experience, and opportunities where I can learn, contribute, and improve.</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">My experience combines software development learning with real workplace skills</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Development Learning</h3>
+                            <p class="timeline-org">Belfast Met, The Open University, and Certiport / Pearson</p>
+                            <p class="timeline-description">Building practical projects while developing skills in HTML, CSS, JavaScript, Python, responsive websites, UI/UX design, and software development principles.</p>
+                            <div class="skills-gained">
+                                <span class="skill-badge">Web development basics</span>
+                                <span class="skill-badge">Planning software solutions</span>
+                                <span class="skill-badge">Understanding user requirements</span>
+                                <span class="skill-badge">Testing and improving projects</span>
+                                <span class="skill-badge">Project documentation</span>
+                                <span class="skill-badge">Computer Science with AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Restaurant Work Experience</h3>
+                            <p class="timeline-org">Restaurant / Customer Service Environment</p>
+                            <p class="timeline-description">Around 3 years of restaurant work experience, developing strong customer service, communication, teamwork, organisation, reliability, and the ability to stay calm in busy environments.</p>
+                            <div class="skills-gained">
+                                <span class="skill-badge">Customer service</span>
+                                <span class="skill-badge">Communication</span>
+                                <span class="skill-badge">Teamwork</span>
+                                <span class="skill-badge">Time management</span>
+                                <span class="skill-badge">Working under pressure</span>
+                                <span class="skill-badge">Problem solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Personal Coding Practice</h3>
+                            <p class="timeline-org">Self-directed learning</p>
+                            <p class="timeline-description">Building personal website projects to improve my front-end development skills, understand real user needs, and practise writing cleaner code.</p>
+                            <div class="skills-gained">
+                                <span class="skill-badge">Independent learning</span>
+                                <span class="skill-badge">Debugging</span>
+                                <span class="skill-badge">Front-end practice</span>
+                                <span class="skill-badge">Project improvement</span>
+                                <span class="skill-badge">GitHub preparation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transferable-box">
+                    <h3>Transferable Skills I Bring Into Tech</h3>
+                    <ul class="transferable-list">
+                        <li>Communicating with people clearly</li>
+                        <li>Staying calm under pressure</li>
+                        <li>Solving problems step by step</li>
+                        <li>Being reliable and organised</li>
+                        <li>Learning from feedback</li>
+                        <li>Working as part of a team</li>
+                        <li>Understanding customer needs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Journey Section -->
+        <section class="learning" id="learning">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Learning Journey</h2>
+                    <p class="section-subtitle">What I am learning now and what I plan to improve next</p>
+                </div>
+
+                <div class="learning-grid">
+                    <div class="learning-column">
+                        <h3>Currently Learning</h3>
+                        <ul class="learning-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>GitHub</li>
+                            <li>Responsive Design</li>
+                            <li>UI/UX basics</li>
+                            <li>AI basics</li>
+                            <li>Software development principles</li>
+                        </ul>
+                    </div>
+
+                    <div class="learning-column">
+                        <h3>Next Goals</h3>
+                        <ul class="learning-list">
+                            <li>Improve JavaScript projects</li>
+                            <li>Build more portfolio projects</li>
+                            <li>Learn React later</li>
+                            <li>Improve GitHub profile</li>
+                            <li>Write better README files</li>
+                            <li>Practise interview questions</li>
+                            <li>Apply for junior and trainee roles</li>
+                            <li>Learn database and backend basics</li>
+                            <li>Build more real-world projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap">
+                    <h3>My Progress Roadmap</h3>
+                    <div class="roadmap-steps">
+                        <div class="roadmap-step">
+                            <div class="step-number">1</div>
+                            <p>Build strong HTML/CSS foundations</p>
+                        </div>
+                        <div class="roadmap-arrow">→</div>
+                        <div class="roadmap-step">
+                            <div class="step-number">2</div>
+                            <p>Improve JavaScript and interactivity</p>
+                        </div>
+                        <div class="roadmap-arrow">→</div>
+                        <div class="roadmap-step">
+                            <div class="step-number">3</div>
+                            <p>Upload projects to GitHub</p>
+                        </div>
+                        <div class="roadmap-arrow">→</div>
+                        <div class="roadmap-step">
+                            <div class="step-number">4</div>
+                            <p>Apply for junior tech opportunities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="roadmap-note">I am focused on improving step by step and building real projects that show my progress.</p>
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section class="github" id="github">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">GitHub & Code Progress</h2>
+                    <p class="section-subtitle">I am building my GitHub profile step by step</p>
+                </div>
+
+                <p class="github-intro">
+                    I am building my GitHub profile step by step. My aim is to upload my projects, improve my code organisation, write clear README files, and show my progress as I continue learning.
+                </p>
+
+                <div class="github-cards">
+                    <div class="github-card">
+                        <span class="card-icon">📁</span>
+                        <span class="card-text">Clean project folders</span>
+                    </div>
+                    <div class="github-card">
+                        <span class="card-icon">📝</span>
+                        <span class="card-text">README files</span>
+                    </div>
+                    <div class="github-card">
+                        <span class="card-icon">📸</span>
+                        <span class="card-text">Project screenshots</span>
+                    </div>
+                    <div class="github-card">
+                        <span class="card-icon">🔗</span>
+                        <span class="card-text">Live demo links</span>
+                    </div>
+                    <div class="github-card">
+                        <span class="card-icon">⚡</span>
+                        <span class="card-text">Regular practice</span>
+                    </div>
+                    <div class="github-card">
+                        <span class="card-icon">🎯</span>
+                        <span class="card-text">Better code organisation</span>
+                    </div>
+                </div>
+
+                <div class="github-button">
+                    <a href="#" class="btn btn-primary">Visit My GitHub</a>
+                    <p class="github-note">GitHub link placeholder. Replace with the real GitHub profile link before publishing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How I Present Projects Section -->
+        <section class="presentation" id="presentation">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How I Present My Projects</h2>
+                    <p class="section-subtitle">Each project includes clear documentation and explanation</p>
+                </div>
+
+                <div class="presentation-checklist">
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">A clear README file</span>
+                    </div>
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">Screenshots</span>
+                    </div>
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">Tools used</span>
+                    </div>
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">What the project does</span>
+                    </div>
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">What I learned</span>
+                    </div>
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">Live demo link</span>
+                    </div>
+                    <div class="checklist-item">
+                        <span class="checklist-icon">✓</span>
+                        <span class="checklist-text">Code link</span>
+                    </div>
+                </div>
+
+                <p class="presentation-note">I am working on improving how I document my projects so employers can understand my learning process and development progress.</p>
+            </div>
+        </section>
+
+        <!-- Availability Section -->
+        <section class="availability">
+            <div class="container">
+                <div class="availability-card">
+                    <h3>Availability</h3>
+                    <p>
+                        I am open to junior, trainee, part-time, work experience, internship, apprenticeship, IT support, and technology programme opportunities in Belfast or hybrid. I am also open to small beginner-friendly website projects that help me build real experience.
+                    </p>
+                    <div class="availability-buttons">
+                        <button class="btn btn-primary" onclick="smoothScroll('#contact')">Contact Me</button>
+                        <a href="cv.html" class="btn btn-secondary" target="_blank" rel="noopener">View CV</a>
+                        <a href="cv.pdf" class="btn btn-secondary" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section class="cv-download">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">View or Download My CV</h2>
+                    <p class="section-subtitle">Learn more about my education, skills, projects, and work experience</p>
+                </div>
+
+                <div class="cv-actions">
+                    <a href="cv.html" class="btn btn-secondary" target="_blank" rel="noopener">View CV</a>
+                    <a href="cv.pdf" class="btn btn-primary" download>Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">I am open to junior, trainee, IT support, and technology programme opportunities</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>Get in Touch</h3>
+                            
+                            <div class="contact-item">
+                                <strong>Email</strong>
+                                <p>yazanantabli4@gmail.com</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Location</strong>
+                                <p>Belfast, United Kingdom</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Interested in</strong>
+                                <p>Junior web developer roles, trainee developer roles, junior software developer roles, IT support roles, and technology programmes.</p>
+                            </div>
+
+                            <div class="contact-buttons">
+                                <a href="mailto:yazanantabli4@gmail.com" class="btn btn-primary">Email Me</a>
+                                <a href="#" class="btn btn-outline">LinkedIn</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yazan Antabli. Built with HTML, CSS, and JavaScript.</p>
+            <div class="footer-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:yazanantabli4@gmail.com" aria-label="Email">Email</a>
+                <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to top</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
