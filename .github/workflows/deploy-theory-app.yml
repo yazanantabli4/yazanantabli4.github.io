@@ -1,0 +1,22 @@
+name: Deploy Theory Ready NI to Netlify
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'theory-app/**'
+      - 'netlify.toml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=theory-app --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 90d70fb7-1da6-45ea-8fdf-e9b941835482
