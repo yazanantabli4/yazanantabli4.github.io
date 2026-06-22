@@ -46,9 +46,15 @@ if (themeToggle) {
 document.addEventListener('DOMContentLoaded', function() {
     const loadingScreen = document.getElementById('loadingScreen');
     if (loadingScreen) {
+        loadingScreen.addEventListener('animationend', function(e) {
+            if (e.animationName === 'fadeOutLoading') {
+                loadingScreen.style.display = 'none';
+            }
+        });
+        // Fallback in case animationend doesn't fire
         setTimeout(function() {
-            loadingScreen.classList.add('fadeOutLoading');
-        }, 1500);
+            loadingScreen.style.display = 'none';
+        }, 2000);
     }
 });
 
@@ -99,7 +105,7 @@ if (header) {
         } else {
             header.classList.remove('scrolled');
         }
-    });
+    }, { passive: true });
 }
 
 // ====== SMOOTH SCROLL FUNCTION ======
@@ -119,7 +125,7 @@ if (backToTopBtn) {
         } else {
             backToTopBtn.style.display = 'none';
         }
-    });
+    }, { passive: true });
 
     backToTopBtn.addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -254,18 +260,19 @@ if (typingText) {
         'Learning HTML, CSS, JavaScript',
         'Building Real Projects'
     ];
-    
+
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
+    let typingTimer = null;
 
     function type() {
         const currentText = texts[textIndex];
-        
+
         if (isDeleting) {
             typingText.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
-            
+
             if (charIndex === 0) {
                 isDeleting = false;
                 textIndex = (textIndex + 1) % texts.length;
@@ -273,16 +280,25 @@ if (typingText) {
         } else {
             typingText.textContent = currentText.substring(0, charIndex + 1);
             charIndex++;
-            
+
             if (charIndex === currentText.length) {
                 isDeleting = true;
-                setTimeout(type, 2000); // Pause before deleting
+                typingTimer = setTimeout(type, 2000);
                 return;
             }
         }
-        
-        setTimeout(type, 100);
+
+        typingTimer = setTimeout(type, 100);
     }
+
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            clearTimeout(typingTimer);
+            typingTimer = null;
+        } else if (!typingTimer) {
+            type();
+        }
+    });
 
     type();
 }
