@@ -1,4 +1,4 @@
-const CACHE = 'theory-ni-v1';
+const CACHE = 'theory-ni-v2';
 const ASSETS = [
   './',
   './index.html',
